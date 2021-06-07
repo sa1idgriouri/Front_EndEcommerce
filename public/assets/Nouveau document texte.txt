@@ -1,0 +1,47 @@
+NODE_ENV=development
+HTTP_HOST=0.0.0.0
+PORT=8000
+PGSSLMODE=disable
+# 60 * 5 * 1000 (3 minutes)
+COOKIE_EXPIRATION_MS=18000000
+SESSION_COOKIE_NAME=Fineo_DB.sid
+
+# Database connection via URL
+DATABASE_URL=http://postgres:1234@127.0.0.1:5432/Fineo_DB
+# Example: DATABASE_URL=http://<user>:<password>@<host>/<database_name>
+
+# Database connection via credentials
+DATABASE_HOST=127.0.0.1
+DATABASE_PORT=5432
+DATABASE_NAME=Fineo_DB
+DATABASE_USER=postgres
+DATABASE_PASSWORD=1234
+
+DEBUG=express:*
+
+# Redis 
+
+CLIENT_URL=localhost:3000
+
+SENDING_BUG_EMAIL=saidgriouri@gmail.com
+
+SSL_KEY_PATH=/etc/letsencrypt/live/beta.api.fineo.io/privkey.pem
+SSL_CERT_PATH=/etc/letsencrypt/live/beta.api.fineo.io/cert.pem
+SSL_CHAIN_PATH=/etc/letsencrypt/live/beta.api.fineo.io/chain.pem
+SSL_FULL_CHAIN_PATH=/etc/letsencrypt/live/beta.api.fineo.io/fullchain.pem
+
+DATABASE_CERT_PATH=/etc/digitalocean-db-ca/ca-certificate.crt
+
+
+# Emailing credentials
+EMAILHOST=smtp.office365.com
+EMAILPORT=587
+MAINEMAIL=saidgriouri@gmail.com
+MAINPASSWORD=
+
+CRYPTOSECRET=78999383JDDI33
+SESSION_COOKIE_SECRET=ueyyzj2èé8ééu729_70zOeOZ9
+
+# Plaid credentials
+#PLAID_CLIENT_ID=5ffe02ca41a391001092d175
+#PLAID_SECRET=46826a2e7249a01d0755866d
